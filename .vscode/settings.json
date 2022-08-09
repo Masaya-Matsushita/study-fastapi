@@ -1,0 +1,7 @@
+// vscodeのmoduleimportエラーを修正
+// https://startlab.jp/learning-python/vscode-settings/
+{
+  "python.analysis.extraPaths": [
+    "/Users/matsushitamasaya/Library/Python/3.8/lib/python/site-packages"
+  ]
+}
