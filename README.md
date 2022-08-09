@@ -6,4 +6,3 @@
   - https://www.maruoka-digital.jp/blogcontent/3908164484/
 - m1mac 対応
   - platform: linux/x86_64 　を docker-compose.yml へ追加
-- 追加でモジュールのインストールがしたい
