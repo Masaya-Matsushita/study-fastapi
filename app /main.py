@@ -1,11 +1,19 @@
 from typing import Optional
 from fastapi import FastAPI
+# from pydantic import BaseModal
+
+# class Item(BaseModal):
+#     name: str
+#     description: Optional[str]
+#     price: int
+#     tax: Optional[float]
 
 app = FastAPI()
 
-@app.get("/countries")
-def country(country_name: Optional[str] = None, city_no: Optional[int] = None):
-    return {
-        "country_name": country_name,
-        "city_no": city_no
-    }
+@app.get("/")
+def foo():
+    return {"message": "hello world"}
+
+# @app.post("/item/")
+# def create_item(item: Item):
+#     return item
