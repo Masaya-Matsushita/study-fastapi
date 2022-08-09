@@ -1,15 +1,11 @@
 from typing import Optional
-
 from fastapi import FastAPI
 
 app = FastAPI()
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Optional[str] = None):
-    return {"item_id": item_id, "q": q}
+@app.get("/countries")
+def country(country_name: Optional[str] = None, city_no: Optional[int] = None):
+    return {
+        "country_name": country_name,
+        "city_no": city_no
+    }
